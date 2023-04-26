@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="3SIT-Solucao-Atendimento_Dylan" id="id-8579e2b7c5c542e4896e4b49a93c6071" version="4.9.0">
+  <folder name="Strategy" id="id-c482d0b166334eddbb39524405a60a13" type="strategy"/>
+  <folder name="Business" id="id-3e271218a4d142068885895a8848bcaf" type="business"/>
+  <folder name="Application" id="id-4f8adb73bfd242308695e8aeb79b062f" type="application"/>
+  <folder name="Technology &amp; Physical" id="id-5848d85c249045eeaea4aaed80066399" type="technology"/>
+  <folder name="Motivation" id="id-ec0560dd2dd94a9985d2db1f28d8abe5" type="motivation">
+    <element xsi:type="archimate:Stakeholder" name="Dylan (Dono)" id="id-448a131f297a46778fa62157f50b7fe4"/>
+    <element xsi:type="archimate:Driver" name="Não podem existir mais atendimentos informais aos clientes" id="id-5daca1fafeaa4c2ea91e1beab411ffcf"/>
+    <element xsi:type="archimate:Value" name="Renovar contratos com os clientes satisfeitos com o atendimento" id="id-3011e04e5b53402cb5158512c00b48fd"/>
+    <element xsi:type="archimate:Value" name="Clientes satisfeitos vão trazer novos contratos" id="id-a61cbda9b83343099c1be6627d59539c"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="id-7c75aa93ce1645718e608b79c0debcc4" type="implementation_migration"/>
+  <folder name="Other" id="id-49d5b1eec6134b7884fd5ac9f97b4cb3" type="other"/>
+  <folder name="Relations" id="id-0e23711f4630429a9003d506e181b445" type="relations">
+    <element xsi:type="archimate:InfluenceRelationship" id="id-6fb98fb04fbd4c37be7a9d363f3689ed" source="id-448a131f297a46778fa62157f50b7fe4" target="id-5daca1fafeaa4c2ea91e1beab411ffcf"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-1cb3ce8d6fa94d07a124c2aebc89831e" source="id-5daca1fafeaa4c2ea91e1beab411ffcf" target="id-3011e04e5b53402cb5158512c00b48fd"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-0037954ce2a649f78c860415fbe6eabc" source="id-5daca1fafeaa4c2ea91e1beab411ffcf" target="id-a61cbda9b83343099c1be6627d59539c"/>
+  </folder>
+  <folder name="Views" id="id-ade3a5c51647404f8c54c874bc168b75" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-14627303ef154cc69e2be0cc1ff98506">
+      <child xsi:type="archimate:DiagramObject" id="id-90b6f46b17754cd29d36dc97612c6c79" archimateElement="id-448a131f297a46778fa62157f50b7fe4">
+        <bounds x="159" y="179" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-3f1f2442fb8a43578cecafca492f8e9b" source="id-90b6f46b17754cd29d36dc97612c6c79" target="id-114f2548a1ec4a3d88d114bf3fe95336" archimateRelationship="id-6fb98fb04fbd4c37be7a9d363f3689ed"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-114f2548a1ec4a3d88d114bf3fe95336" targetConnections="id-3f1f2442fb8a43578cecafca492f8e9b" archimateElement="id-5daca1fafeaa4c2ea91e1beab411ffcf">
+        <bounds x="384" y="172" width="159" height="69"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-5b556b6de03c49ea9bbc4eff4808e063" source="id-114f2548a1ec4a3d88d114bf3fe95336" target="id-c271a69dab7c48299c2ac69a10723f89" archimateRelationship="id-1cb3ce8d6fa94d07a124c2aebc89831e"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-39c692c9856f43048fd2e1a704f9a8bd" source="id-114f2548a1ec4a3d88d114bf3fe95336" target="id-b338020868e4432da084afbcd33e6ae6" archimateRelationship="id-0037954ce2a649f78c860415fbe6eabc"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-c271a69dab7c48299c2ac69a10723f89" targetConnections="id-5b556b6de03c49ea9bbc4eff4808e063" archimateElement="id-3011e04e5b53402cb5158512c00b48fd">
+        <bounds x="492" y="36" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b338020868e4432da084afbcd33e6ae6" targetConnections="id-39c692c9856f43048fd2e1a704f9a8bd" archimateElement="id-a61cbda9b83343099c1be6627d59539c">
+        <bounds x="324" y="36" width="120" height="55"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
